@@ -1,0 +1,15 @@
+{
+	"manifest_version": 2,
+	"name": "ChatGPT Talker",
+	"description": "ChatGPT web will talk to us.",
+	"version": "1.0",
+	"content_scripts": [
+	    {
+	      "matches": ["*://chat.openai.com/*"],
+	      "js": ["talker.js"]
+	    }
+	],
+	"permissions": [
+    	"<all_urls>"
+	]
+}
